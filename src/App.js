@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import styled from "styled-components";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const Image = styled.img`
+    display: table;
+    margin: 0 auto;
+    width: 720px;
+    max-width: 100%;
+`;
+
+const Images = [
+    "https://i.imgur.com/yKhDuFB.png",
+    "https://i.imgur.com/HK5ho20.png",
+    "https://i.imgur.com/JPYVyO3.png",
+    "https://i.imgur.com/jGDC5J7.png",
+    "https://i.imgur.com/Nyh9JlK.png",
+    "https://i.imgur.com/Qr95Xwp.png"
+];
+
+const App = () => {
+    const [imageIndex, setImageIndex] = useState(0);
+
+    return <div onClick={() => setImageIndex(imageIndex + 1)}>
+        <Image
+            alt="image"
+            src={Images[imageIndex % Images.length]}
+        />
     </div>
-  );
-}
+};
 
 export default App;
