@@ -15,12 +15,15 @@ const StyledSpinner = styled(SpinnerRoundFilled)`
 `;
 
 const Images = [
-    "https://i.imgur.com/yKhDuFB.png",
-    "https://i.imgur.com/HK5ho20.png",
-    "https://i.imgur.com/JPYVyO3.png",
-    "https://i.imgur.com/jGDC5J7.png",
-    "https://i.imgur.com/Nyh9JlK.png",
-    "https://i.imgur.com/Qr95Xwp.png"
+    "https://i.imgur.com/A3Omqfy.png",
+
+    "https://i.imgur.com/pRWksfC.png",
+    "https://i.imgur.com/NnCtoj3.png",
+    "https://i.imgur.com/x0gz6wi.png",
+    "https://i.imgur.com/R9HdZhc.png",
+
+    "https://i.imgur.com/jqDPlzI.png",
+    "https://i.imgur.com/MI2KLQ8.png"
 ];
 
 
